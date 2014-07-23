@@ -32,7 +32,10 @@
                 
                 <div class="name">
                     <script type="text/javascript">
-                        <%= u.getFullName() %>
+                        function getUserName(){
+                            var result = 1+1;
+                            return result;
+                        }
                         </script>
                 </div>
                 <div class="title">
@@ -54,45 +57,36 @@
             
             <div class="userInfo">
                 
-                <div class="page-<%= ((u.getEmail() == null || u.getEmail().equals("")) ? "light" : "normal") %>-text page-nowrap">
-                    <%= ((u.getEmail() == null || u.getEmail().equals("")) ? "N/A" : u.getEmail()) %>
+                <div class="page-text normal-text">
+                        <p>Marko Sotirovic</p>
                 </div>
             </div>
             
             <div class="userInfo">
                 
-                <div class="page-<%= ((u.getPhone() == null || u.getPhone().equals("")) ? "light" : "normal") %>-text">
-                    <%= ((u.getPhone() == null || u.getPhone().equals("")) ? "N/A" : u.getPhone()) %>
+                <div class="page-text normal-text">
+                    <p>(224) 343-7800</p>
                 </div>
             </div>
             
             <div class="userInfo">
                 
-                <div class="page-<%= ((u.getEmployeeCode() == null || u.getEmployeeCode().equals("")) ? "light" : "normal") %>-text">
-                    <%= ((u.getEmployeeCode() == null || u.getEmployeeCode().equals("")) ? "N/A" : u.getEmployeeCode()) %>
+                <div class="page-text normal-text">
+                    <p>Professional Baller</p>
                 </div>
             </div>
             
             <div class="userInfo">
                 
                 <div class="page-normal-text">
-                    <%
-                        out.print(u.getSiteCity());
-                        if (u.getSiteCountry().equals("United States")) {
-                            if (!u.getSiteCity().equals("")) out.print(", ");
-                                out.print(u.getSiteState());
-                                } else {
-                                    if (!u.getSiteCity().equals("")) out.print(", ");
-                                        out.print(u.getSiteCountry());
-                                        }
-                                    %>
+                    <p>Ball Town</p>
                 </div>
             </div>
             
             <div class="userInfo">
                 
-                <div class="page-<%= ((u.getDepartmentNumber() == null || u.getDepartmentNumber().equals("")) ? "light" : "normal") %>-text">
-                    <%= ((u.getDepartmentNumber() == null || u.getDepartmentNumber().equals("")) ? "N/A" : u.getDepartmentNumber()) %>
+                <div class="page-text normal-text">
+                    <p>Suck It</p>
                 </div>
             </div>
             
